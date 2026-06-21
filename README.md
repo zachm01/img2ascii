@@ -41,7 +41,7 @@ In the `demo` folder, I have provided an image of Jean Siméon Chardin's paintin
 After playing around with the existing character sets, I found that `box_drawing` looks the nicest to me on this image. When I run:
 
 ```sh
-python3 img2ascii.py in=demo/bubbles.jpg out=demo/bubbles_noncontrast.txt dims=512,256 charset=box_drawing
+python3 img2ascii.py in=demo/bubbles.jpg out=demo/bubbles_noncontrast.txt dims=350,192 charset=box_drawing
 ```
 
 I get the following image (this is a screenshot of `demo/bubbles_noncontrast.txt`):
@@ -55,7 +55,7 @@ I think this looks alright, but we could do better. To me, the primary issue is 
 When I run the following:
 
 ```sh
-python3 img2ascii.py in=demo/bubbles_contrasted.jpg out=demo/bubbles.txt dims=512,256 charset=box_drawing
+python3 img2ascii.py in=demo/bubbles_contrasted.jpg out=demo/bubbles.txt dims=350,192 charset=box_drawing
 ```
 
 I get this, screenshotted from `bubbles.txt`:
