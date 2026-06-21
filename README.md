@@ -94,4 +94,6 @@ This project uses:
 
 # Issues
 
-1. Sometimes the images come out rotated. I do not know why. 
+1. Sometimes the images come out rotated. I do not know why; this might be a PIL thing, but I do not know for sure.
+2. I need to make the look-up table file handle multiple tables and grow as new character sets are added so that it does not have to recompute tables with each change to a different but familiar character set.
+3. It would be nice if there was a way adjust the contrast internally, without having to bring the image into a photo editor.
