@@ -32,6 +32,38 @@ python3 img2ascii.py dims=400,400 w=60
 
 This will convert the image `in.jpg` to a text image using the ASCII character set and will produce an output that is 400 lines long, each line of which is 60 characters wide. 
 
+# Demonstration
+
+In the `demo` folder, I have provided an image of Jean Siméon Chardin's painting _Soap Bubbles_.
+
+![_Soap Bubbles_ by Jean Siméon Chardin](demo/bubbles.jpg)
+
+After playing around with the existing character sets, I found that `box_drawing` looks the nicest to me on this image. When I run:
+
+```sh
+python3 img2ascii.py in=demo/bubbles.jpg out=demo/bubbles_noncontrast.txt dims=512,256 charset=box_drawing
+```
+
+I get the following image (this is a screenshot of `demo/bubbles_noncontrast.txt`):
+
+![Low-contrast text image of _Soap Bubbles_ by Jean Siméon Chardin](demo/bubbles_noncontrast.png)
+
+I think this looks alright, but we could do better. To me, the primary issue is contrast. If I increase the contrast, highlights, and shadows on _Soap Bubbles_, we get the following image:
+
+![High-contrast edit of _Soap Bubbles_ by Jean Siméon Chardin](demo/bubbles_contrasted.jpg)
+
+When I run the following:
+
+```sh
+python3 img2ascii.py in=demo/bubbles_contrasted.jpg out=demo/bubbles.txt dims=512,256 charset=box_drawing
+```
+
+I get this, screenshotted from `bubbles.txt`:
+
+![Text image of _SoapBubbles_ by Jean Siméon Chardin](demo/bubbles.png)
+
+Much better!
+
 # Methodology
 
 ## Character lightness
