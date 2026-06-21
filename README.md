@@ -55,7 +55,7 @@ Upon examining the look-up table for the ASCII character set, we see that the da
 
 # Demonstration
 
-![Trumpet valve block](trumpet.JPG)
+![Trumpet valve block](demo/trumpet.JPG)
 
 ```
 ░░░░░░░▂▂▂▂▂▂▂▂▂▂▂▂▂▎▎▎▎▎▎▎▎▎▍▍▍▍▍▍▍▍▃▃▍▃▃▃▃▃▃▃▃▃▃▃▃▞▞▞▞▞▞▞▞▞▞▞▞▞▞▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▒▚▚▚▚▚▚▚▚▚▚▚▚▚▚▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▚▞▞▞▃▃▃▍▍▎▎▎▂▂░░░▖▖▖▗▗▗▗▘▘▘▘▘▘▘▘▘▘▘▘▘▗▗▗▗▗▖▖▖▖▖▖▖░░░░▂▂▎▎▍▍▃▃▞▞▚▚▒▒▐▐▐▌

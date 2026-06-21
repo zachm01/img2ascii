@@ -83,7 +83,7 @@ def check_reload_lut(lut: dict[str, float], chars: str | list):
     return sorted(list(lut.keys())) != sorted(list(chars))
 
 
-def convert(lut_path: str, chars: str | list, dims: tuple[int, int], image_path: str, fontfile: str, output_path: str = "") -> str:
+def convert(lut_path: str, chars: str | list, dims: tuple[int, int], image_path: str, fontfile: str, output_path: str = ""):
     with open(lut_path, "r") as f:
         lut = json.load(f)
         f.close()
@@ -101,8 +101,8 @@ def convert(lut_path: str, chars: str | list, dims: tuple[int, int], image_path:
         with open(output_path, "w") as f:
             f.write(output)
             f.close()
-    
-    return output
+    else:
+        print(output)
 
 
 
@@ -130,6 +130,4 @@ if __name__ == "__main__":
             DEFAULT_CHARSET = arg.replace("charset=", "")
             CHARS = charsets[DEFAULT_CHARSET]
     
-    output = convert(lut_path=LUT_PATH, dims=DIMS, chars=CHARS, image_path=IMG_PATH, fontfile=FONT_BDF_PATH, output_path=OUT_PATH)
-    
-    print(output)
+    convert(lut_path=LUT_PATH, dims=DIMS, chars=CHARS, image_path=IMG_PATH, fontfile=FONT_BDF_PATH, output_path=OUT_PATH)
